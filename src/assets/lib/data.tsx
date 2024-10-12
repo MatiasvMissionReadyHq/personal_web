@@ -13,13 +13,13 @@ import mongodbicon from "../../assets/icons/mongoicon.svg";
 import vuejsicon from "../../assets/icons/vueicon.svg";
 import expressicon from "../../assets/icons/expressicon.svg";
 import sassscssicon from "../../assets/icons/sassicon.svg";
-import trelloicon from "../../assets/icons/trelloicon.svg";
+// import trelloicon from "../../assets/icons/trelloicon.svg";
 import apiicon from "../../assets/icons/apiicon.svg";
-import axiosicon from "../../assets/icons/axiosicon.svg";
-import spotifyicon from "../../assets/icons/spotifyicon.svg";
-import netlifyicon from "../../assets/icons/netlifyicon.svg";
-import rendericon from "../../assets/icons/rendericon.svg";
-import jwticon from "../../assets/icons/jwticon.svg";
+// import axiosicon from "../../assets/icons/axiosicon.svg";
+// import spotifyicon from "../../assets/icons/spotifyicon.svg";
+// import netlifyicon from "../../assets/icons/netlifyicon.svg";
+// import rendericon from "../../assets/icons/rendericon.svg";
+// import jwticon from "../../assets/icons/jwticon.svg";
 import wordpressicon from "../../assets/icons/wordpressicon.svg";
 import shopifyicon from "../../assets/icons/shopifyicon.svg";
 import webflowicon from "../../assets/icons/webflowicon.svg";
@@ -89,7 +89,7 @@ export const projectsData = [
       { name: "Express", icon: expressiconwhite },
     ],
     image: turners,
-    deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
+    deploymenturl: "https://shiny-moonbeam-059582.netlify.app/",
     githuburl: "https://github.com/MatiasvMissionReadyHq/car_insurance_AI",
     githubicon: FiGithub,
     deploymenticon: FiLink,
@@ -117,7 +117,7 @@ export const projectsData = [
       { name: "Figma", icon: figmaicon },
     ],
     image: zStation,
-    // deploymenturl: "https://silentmoon-grpw.onrender.com/",
+    deploymenturl: "https://shiny-moonbeam-059582.netlify.app/",
     githuburl:
       "https://github.com/MatiasvMissionReadyHq/Mission5_ZStation",
     githubicon: FiGithub,
@@ -145,7 +145,7 @@ export const projectsData = [
       { name: "Node.js", icon: nodejsicon },
     ],
     image: tradeMe,
-    // deploymenturl: "https://mern-haushaltsbuch.onrender.com/",
+    deploymenturl: "https://shiny-moonbeam-059582.netlify.app/",
     githuburl: "https://github.com/MatiasvMissionReadyHq/trademe-project",
     githubicon: FiGithub,
     deploymenticon: FiLink,

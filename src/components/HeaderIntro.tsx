@@ -47,7 +47,7 @@ const HeaderIntro: React.FC = () => {
             link={`#${button.link.toLocaleLowerCase()}`}
             buttoncolor={button.color}
             onClick={() => {
-              setActiveSection(button.link);
+              setActiveSection(button.name);
               setTimeOfLastClick(Date.now());
             }}
           />

@@ -73,7 +73,7 @@ const ProjectSlider: React.FC = () => {
             >
               <p className="text-[--white] mt-16 mb-6">
                 <span className="text-[--orange]">&lt;</span>
-                {language === "DE" ? "Projekte" : "Projects"}
+                {language === "ES" ? "proyectos" : "Projects"}
                 <span className="text-[--orange]">/&gt;</span>
               </p>
               <h2 className="text-[--white] mb-16">
@@ -187,7 +187,7 @@ const ProjectSlider: React.FC = () => {
                 <p className="text-white  max-lg:text-4xl">
                   {language === "ES"
                     ? project.description
-                    : project.description_ES}
+                    : project.description_EN}
                 </p>
 
                 <div className="technologies">
