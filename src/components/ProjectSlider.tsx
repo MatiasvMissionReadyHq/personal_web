@@ -26,8 +26,8 @@ const ProjectSlider: React.FC = () => {
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
   const notifyServerRequest = () => {
-    if (language === "DE") {
-      toast.info(toastMessages.loadingProject.de);
+    if (language === "ES") {
+      toast.info(toastMessages.loadingProject.es);
     } else {
       toast.info(toastMessages.loadingProject.en);
     }
@@ -77,7 +77,7 @@ const ProjectSlider: React.FC = () => {
                 <span className="text-[--orange]">/&gt;</span>
               </p>
               <h2 className="text-[--white] mb-16">
-                {language === "DE" ? "Meine Projekte" : "My Projects"}
+                {language === "ES" ? "Mis proyectos" : "My Projects"}
               </h2>
             </motion.div>
             <Swiper
@@ -104,13 +104,13 @@ const ProjectSlider: React.FC = () => {
                     <h2>{project.title}</h2>
 
                     <p className="text-white">
-                      {language === "DE"
+                      {language === "ES"
                         ? project.description
                         : project.description_EN}
                     </p>
                     <div className="technologies">
                       <h3>
-                        {language === "DE" ? "Technologien" : "Technologies"}
+                        {language === "ES" ? "Tecnologias" : "Technologies"}
                       </h3>
                       <div className="grid grid-cols-6 gap-10 p-4">
                         {project.technologies.map(
@@ -185,14 +185,14 @@ const ProjectSlider: React.FC = () => {
                   />
                 </div>
                 <p className="text-white  max-lg:text-4xl">
-                  {language === "DE"
+                  {language === "ES"
                     ? project.description
-                    : project.description_EN}
+                    : project.description_ES}
                 </p>
 
                 <div className="technologies">
                   <h3 className="text-white">
-                    {language === "DE" ? "Technologien" : "Technologies"}
+                    {language === "ES" ? "Tegnologias" : "Technologies"}
                   </h3>
                   <div className="grid grid-cols-3 gap-10 p-4">
                     {project.technologies.map(

@@ -26,15 +26,15 @@ const HeaderIntro: React.FC = () => {
         className="w-1/6 drop-shadow-2xl rounded-full shadow-2xl avatar-img max-lg:w-3/4"
       />
       <h1>
-        {language === "DE"
-          ? headerIntroData.title.de
+        {language === "ES"
+          ? headerIntroData.title.es
           : headerIntroData.title.en}
         <span className="wave text-7xl">&#128075;&#127997;</span>
       </h1>
       <h2>{headerIntroData.subtitle}</h2>
       <p className="w-1/2 text-center max-lg:hidden">
-        {language === "DE"
-          ? headerIntroData.description.de
+        {language === "ES"
+          ? headerIntroData.description.es
           : headerIntroData.description.en}
       </p>
 
@@ -42,12 +42,12 @@ const HeaderIntro: React.FC = () => {
         {headerIntroData.buttons.map((button, index) => (
           <Button
             key={index}
-            label={language === "DE" ? button.label.de : button.label.en}
+            label={language === "ES" ? button.label.es : button.label.en}
             iconSVG={button.icon}
-            link={`#${button.name.toLocaleLowerCase()}`}
+            link={`#${button.link.toLocaleLowerCase()}`}
             buttoncolor={button.color}
             onClick={() => {
-              setActiveSection(button.name);
+              setActiveSection(button.link);
               setTimeOfLastClick(Date.now());
             }}
           />

@@ -23,10 +23,10 @@ import jwticon from "../../assets/icons/jwticon.svg";
 import wordpressicon from "../../assets/icons/wordpressicon.svg";
 import shopifyicon from "../../assets/icons/shopifyicon.svg";
 import webflowicon from "../../assets/icons/webflowicon.svg";
-import tastyMockup from "../../assets/img/tasty_mockup.webp";
-import instorMockup from "../../assets/img/instor_mockup.webp";
-import silentmoonMockup from "../../assets/img/silentmoon_mockup.webp";
-import profilepicture from "../img/me2.webp";
+import turners from "../../assets/img/turners.webp";
+import tradeMe from "../../assets/img/tradeMe.webp";
+import zStation from "../../assets/img/zStation.webp";
+import profilepicture from "../img/IMG_4018.webp";
 import caricon from "../../assets/icons/car-icon.svg";
 import travelicon from "../../assets/icons/travel-icon.svg";
 import hardwareicon from "../../assets/icons/hardware-icon.svg";
@@ -39,28 +39,31 @@ import Privacy from "../../components/Privacy";
 
 export const headerIntroData = {
   title: {
-    de: "Hi, ich bin Alpay",
-    en: "Hi, I'm Alpay",
+    es: "Hola Soy Matías",
+    en: "Hi, I'm Matias",
   },
   subtitle: "Fullstack Developer ",
   description: {
-    de: "Ich bin Alpay, ein Fullstack-Entwickler mit dem Ziel, meine Karriere voranzutreiben und an inspirierenden Projekten teilzunehmen. Hier präsentiere ich meine Arbeiten und meine Leidenschaft für die Webentwicklung. Lassen Sie uns gemeinsam digitale Lösungen gestalten und die Zukunft formen!",
-    en: "I'm Alpay, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
+    es: "Soy Matías, un desarrollador fullstack con el objetivo de avanzar en mi carrera y participar en proyectos inspiradores. Aquí presento mi trabajo y mi pasión por el desarrollo web. ¡Demos forma a soluciones digitales juntos y moldeemos el futuro!",
+    en: "I'm Matias, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
   },
   buttons: [
     {
       name: "Contact",
+      link: "https://www.linkedin.com/in/matias-pereyra-0918b478/",
       label: {
-        de: "Kontaktiere mich",
+        es: "Contáctame",
         en: "Contact me",
+        
       },
       icon: FiMail,
       color: "main-btn",
     },
     {
       name: "Projects",
+      link: "https://www.linkedin.com/in/matias-pereyra-0918b478/",
       label: {
-        de: "Meine Projekte",
+        es: "Mis Proyectos",
         en: "My Projects",
       },
       icon: FiGithub,
@@ -72,25 +75,22 @@ export const headerIntroData = {
 
 export const projectsData = [
   {
-    title: "Tasty App",
+    title: "Turner Car Insurance",
     description:
-      "Eine Rezepte App, die wir als Team mit React und der MealDB API gebaut haben. Ich war der Front-End Entwickler und habe Features wie Voice Search oder Print to PDF programmiert. Das Design wurde mit Figma erstellt. Die Website ist responsive und mobile-optimiert.",
+      "El proyecto de IA para seguros de automóviles utiliza IA generativa para actuar como un consultor de seguros, guiando a los usuarios a través de una serie de preguntas adaptativas para recomendar la mejor póliza de seguros adaptada a sus necesidades. Este proyecto se centra en proporcionar una interfaz fácil de usar para seleccionar entre el Seguro de Desgaste Mecánico, el Seguro de Automóvil Integral o el Seguro de Automóvil a Terceros.",
     description_EN:
-      "A recipe app that we built as a team with React and the MealDB API. I was the front-end developer and programmed features like voice search or print to PDF. The design was created with Figma. The website is responsive and mobile-optimized.",
+      "The Car Insurance AI project utilizes generative AI to act as an insurance consultant, guiding users through a series of adaptive questions to recommend the best insurance policy tailored to their needs. This project focuses on providing a user-friendly interface for selecting between Mechanical Breakdown Insurance, Comprehensive Car Insurance, or Third Party Car Insurance.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
       { name: "REST Api", icon: apiicon },
       { name: "React", icon: reacticon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Canva", icon: canvaicon },
-      { name: "Netlify", icon: netlifyicon },
-      { name: "Trello", icon: trelloicon },
+      { name: "Express", icon: expressiconwhite },
     ],
-    image: tastyMockup,
+    image: turners,
     deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
-    githuburl: "https://github.com/AlpayC/Frontend_Abschlussprojekt_Tasty",
+    githuburl: "https://github.com/MatiasvMissionReadyHq/car_insurance_AI",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -101,29 +101,25 @@ export const projectsData = [
     },
   },
   {
-    title: "Silentmoon",
+    title: "Z Energy Redesign",
     description:
-      "Eine Yoga und Meditations App, die wir als Team mit React, MongoDB, Express und Node.js gebaut haben. Meine Aufgabe als Gitmaster und Backend Entwickler bestand darin, das Backend mit Anbindung anhand einer Restful API zu programmieren und die Datenbank in MongoDB zu modellieren.",
+      "El proyecto de Rediseño de Z Energy tiene como objetivo mejorar la experiencia del usuario en las páginas del localizador de estaciones y la información sobre precios de combustible en el sitio web de Z Energy. El rediseño aborda los desafíos que enfrentan los usuarios al localizar gasolineras según ofertas de servicio específicas y al comparar precios de combustible de manera efectiva.",
     description_EN:
-      "A yoga and meditation app that we built as a team with React, MongoDB, Express and Node.js. My task as a gitmaster and backend developer was to program the backend with connection using a restful API and to model the database in MongoDB.",
+      "The Z Energy Redesign project aims to enhance the user experience of the station locator and fuel price information pages on the Z Energy website. The redesign addresses the challenges faced by users in locating gas stations based on specific service offerings and comparing fuel prices effectively.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
-      { name: "Spotify Api", icon: spotifyicon },
       { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
-      { name: "Axios", icon: axiosicon },
       { name: "MongoDB", icon: mongodbicon },
       { name: "Express", icon: expressiconwhite },
       { name: "Node.js", icon: nodejsicon },
       { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
     ],
-    image: silentmoonMockup,
-    deploymenturl: "https://silentmoon-grpw.onrender.com/",
+    image: zStation,
+    // deploymenturl: "https://silentmoon-grpw.onrender.com/",
     githuburl:
-      "https://github.com/AlpayC/Fullstack_Abschlussprojekt_SilentMoon",
+      "https://github.com/MatiasvMissionReadyHq/Mission5_ZStation",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -134,28 +130,23 @@ export const projectsData = [
     },
   },
   {
-    title: "Furniture Organizer",
+    title: "Trademe",
     description:
-      "Eine Möbel-Organizer App, die wir als Duo-Team mit React, MongoDB, Express und Node.js programmiert haben. Als Gitmaster habe ich die Verknüpfung des Frontends mit dem Backend und die Datenbankmodellierung übernommen. Die App ist responsive und mobile-optimiert.",
+      "El proyecto de Trade Me se centra en rediseñar la página de listado de productos y perfeccionar el proceso de pujas en la plataforma Trade Me para mejorar la experiencia del usuario, especialmente para estudiantes internacionales y nuevos usuarios. El proyecto tiene como objetivo simplificar el proceso de pujas, evitando pujas accidentales, mientras mejora el diseño general de las páginas de productos y la función de comparación para facilitar la evaluación de artículos.",
     description_EN:
-      "A furniture organizer app that we programmed as a duo team with React, MongoDB, Express and Node.js. As a gitmaster, I took over the connection of the frontend to the backend and the database modeling. The app is responsive and mobile-optimized.",
+      "The Trade Me Project focuses on redesigning the product listing page and refining the bidding process on the Trade Me platform to enhance user experience for international students and new users. The project aims to simplify the bidding process, preventing accidental bids, while improving the overall layout of product pages and the comparison feature for easier item evaluation.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
       { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
-      { name: "Axios", icon: axiosicon },
       { name: "MongoDB", icon: mongodbicon },
       { name: "Express", icon: expressiconwhite },
       { name: "Node.js", icon: nodejsicon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
-      { name: "Trello", icon: trelloicon },
     ],
-    image: instorMockup,
-    deploymenturl: "https://mern-haushaltsbuch.onrender.com/",
-    githuburl: "https://github.com/AlpayC/Furniture_MERN",
+    image: tradeMe,
+    // deploymenturl: "https://mern-haushaltsbuch.onrender.com/",
+    githuburl: "https://github.com/MatiasvMissionReadyHq/trademe-project",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -169,7 +160,7 @@ export const projectsData = [
 
 export const liveTickerData = {
   content: {
-    de: "Weitere Projekte auf Github",
+    de: "Mas proyectos en Github",
     en: "More Projects on Github",
   },
 } as const;
@@ -297,36 +288,36 @@ export const skillsDataCMS = [
 ] as const;
 
 export const navLinks = [
-  { de: "Home", en: "Home", hash: "#home", icon: GoHome },
-  { de: "Skills", en: "Skills", hash: "#skills", icon: GoStack },
-  { de: "Projekte", en: "Projects", hash: "#projects", icon: GoProject },
-  { de: "Über mich", en: "About me", hash: "#about-me", icon: GoPerson },
-  { de: "Kontakt", en: "Contact", hash: "#contact", icon: GoMail },
+  { es: "Home", en: "Home", hash: "#home", icon: GoHome },
+  { es: "habilidad", en: "Skills", hash: "#skills", icon: GoStack },
+  { es: "Projectos", en: "Projects", hash: "#projects", icon: GoProject },
+  { es: "Sobre mi", en: "About me", hash: "#about-me", icon: GoPerson },
+  { es: "Contacto", en: "Contact", hash: "#contact", icon: GoMail },
 ] as const;
 
 export const FooterLinks = [
-  { de: "Impressum", en: "Imprint", hash: "#imprint", data: <Imprint /> },
-  { de: "Datenschutz", en: "Privacy", hash: "#privacy", data: <Privacy /> },
+  { es: "Imprimir", en: "Imprint", hash: "#imprint", data: <Imprint /> },
+  { es: "Privacidad", en: "Privacy", hash: "#privacy", data: <Privacy /> },
 ] as const;
 
 export const sideBarRightMail = {
-  link: "mailto:myemail@com",
-  text: "myemail@com",
+  link: "mailto:matiasv@missionreadyh2.com",
+  text: "matiasv@missionreadyh2.com",
 } as const;
 
 export const sideBarLeftSocials = [
   {
-    link: "https://www.linkedin.com/in/alpay/",
+    link: "https://www.linkedin.com/in/matias-pereyra-0918b478/",
     icon: FiLinkedin,
     altimgname: "linkedin",
   },
   {
-    link: "https://github.com/AlpayC",
+    link: "https://github.com/MatiasvMissionReadyHq",
     icon: FiGithub,
     altimgname: "github",
   },
   {
-    link: "mailto:myemail@com",
+    link: "mailto:matiasv@missionreadyh2.com",
     icon: FiMail,
     altimgname: "mail",
   },
@@ -334,38 +325,38 @@ export const sideBarLeftSocials = [
 
 export const quotesData = [
   {
-    de: '"Es ist überhaupt nicht wichtig, es beim ersten Mal richtig zu machen. Es ist entscheidend, es beim letzten Mal richtig zu machen."',
+    es: '"No es en absoluto importante hacerlo bien a la primera. Es vital hacerlo bien a la última."',
     en: `"It's not at all important to get it right the first time. It's vitally important to get it right the last time."`,
     author: "Andrew Hunt",
   },
   {
-    de: '"Das Web ist wie eine Leinwand und der Code ist die Farbe. Erschaffe dein Meisterwerk."',
+    es: '"El diseño no es solo cómo se ve y se siente. El diseño es cómo funciona."',
     en: `"The web is like a canvas, and code is the paint. Create your masterpiece."`,
   },
 ] as const;
 
 export const aboutMeData = {
-  title: "Über mich",
+  title: "Sobre me",
   title_EN: "About me",
-  description: "Ein paar Codeschnippsel über mich",
+  description: "Algunos fragmentos de código sobre mí.",
   description_EN: "A few code snippets about me",
-  paragraphs_DE: [
+  paragraphs_ES: [
     {
-      title: "Die Schaltkreise meines Herzens",
+      title: "Los Circuitos de mi Corazón",
       description:
-        "Wenn ich nicht in der digitalen Welt unterwegs bin, durchstreife ich die faszinierende Welt der Technik und Hardware. Schaltkreise und Lötstellen sind für mich wie Puzzleteile eines aufregenden Abenteuers.",
+        "Cuando no navego por el mundo digital, exploro el fascinante mundo de la tecnología y el hardware. Los circuitos y las soldaduras son como piezas de rompecabezas para mí en una emocionante aventura.",
       icon: hardwareicon,
     },
     {
-      title: "Auf der Überholspur des Lebens",
+      title: "En la Vía Rápida de la Vida",
       description:
-        "Neben dem Coden befinde ich mich gerne auf der Überholspur – im wahrsten Sinne des Wortes. Autos sind meine Leidenschaft, und ich genieße es, mit PS-starken Maschinen auf unbekannten Straßen unterwegs zu sein.",
+        "Además de programar, me gusta estar en la vía rápida, en el verdadero sentido de la palabra. Los coches son mi pasión y disfruto de estar en caminos desconocidos con máquinas potentes.",
       icon: caricon,
     },
     {
-      title: "Entdeckungsfreude als Lebensmotto",
+      title: "La Alegría del Descubrimiento como motor de Vida",
       description:
-        "Meine Reise als Webentwickler ist nur ein Teil meines Lebenswegs. Ich lebe nach dem Motto, dass das Abenteuer erst beginnt, wenn man das Bekannte hinter sich lässt. Das Entdecken neuer Orte ist meine Form der kreativen Inspiration.",
+        "Mi viaje como desarrollador web es solo una parte de mi camino de vida. Vivo bajo el lema de que la aventura solo comienza cuando dejas lo familiar atrás. Descubrir nuevos lugares y culturas es mi forma de inspiración creativa.",
       icon: travelicon,
     },
   ],
@@ -393,23 +384,23 @@ export const aboutMeData = {
 
 export const contactData = {
   title: {
-    de: "Kontakt",
+    es: "Contacto",
     en: "Contact",
   },
   description: {
-    de: "Schreib mir eine Nachricht und ich melde mich bei dir.",
+    es: "Escríbeme un mensaje y me pondré en contacto contigo.",
     en: "Write me a message and I will get back to you.",
   },
   inputfields: [
     {
       name: "name",
       placeholder: {
-        de: "Dein Name",
+        es: "Tu Nombre",
         en: "Your Name",
       },
       type: "text",
       validation: {
-        de: "Bitte gebe deinen Namen ein",
+        es: "por favor, completa tu nombre",
         en: "Please fill in your name",
       },
       pattern: "{2}",
@@ -417,12 +408,12 @@ export const contactData = {
     {
       name: "email",
       placeholder: {
-        de: "Deine E-Mail Adresse",
+        es: "Tu correo electrónico",
         en: "Your E-Mail",
       },
       type: "email",
       validation: {
-        de: "Bitte gebe deine Email ein",
+        es: "por favor, completa tu correo electrónico",
         en: "Please fill in your email",
       },
       pattern: "[@]{4}",
@@ -430,12 +421,12 @@ export const contactData = {
     {
       name: "subject",
       placeholder: {
-        de: "Deine Betreff",
+        es: "Tu Asunto",
         en: "Your Subject",
       },
       type: "text",
       validation: {
-        de: "Bitte gebe einen Betreff ein",
+        es: "por favor, completa tu asunto",
         en: "Please fill in your subject",
       },
       pattern: "{10}",
@@ -443,20 +434,20 @@ export const contactData = {
   ],
   textarea: {
     placeholder: {
-      de: "Deine Nachricht",
+      es: "Tu Mensaje",
       en: "Your Message",
     },
     name: "message",
     rows: 10,
     validation: {
-      de: "Bitte gebe deine Nachricht ein",
+      es: "Por favor, completa tu mensaje.",
       en: "Please fill in your message",
     },
     pattern: "{10}",
   },
   button: {
     value: {
-      de: "Absenden",
+      es: "Enviar",
       en: "Send",
     },
   },
@@ -469,11 +460,11 @@ export const contactData = {
   },
   privacyOptIn: {
     checkbox: {
-      de: "Ich stimme zu, dass Alpay meine personenbezogenen Daten (Name und E-Mail-Adresse) verwenden darf, um mit mir Kontakt aufzunehmen.",
+      es: "Estoy de acuerdo en que Alpay puede utilizar mis datos personales (nombre y dirección de correo electrónico) para contactarme.",
       en: "I agree that Alpay may use my personal data (name and e-mail address) to contact me.",
     },
     description: {
-      de: "Durch Übermittlung dieser Anfrage bestätigen Sie, dass Sie die Datenschutzerklärung gelesen haben",
+      es: "Al enviar esta solicitud, reconoces que has leído la Política de Privacidad.",
       en: "By submitting this request, you acknowledge that you have read the Private Policy",
     },
   },
@@ -481,26 +472,26 @@ export const contactData = {
 
 export const toastMessages = {
   loadingProject: {
-    de: "🦄 Die Live Demo wird gleich geöffnet. Server werden gestartet...",
+    es: "🦄 La demostración en vivo se abrirá en breve. Iniciando servidores...",
     en: "🦄 The live demo will open shortly. Starting servers...",
   },
   successEmailSent: {
-    de: "🦄 Vielen Dank für deine Email. Ich werde mich schnellstmöglich bei dir melden",
+    es: "🦄 Gracias por tu correo electrónico. Te responderé lo antes posible.",
     en: "🦄 Thank you for your email. I will get back to you as soon as possible",
   },
   failedEmailSent: {
-    de: "🦄 Leider hat der Versand deiner Email nicht geklappt. Bitte versuche es später noch einmal",
+    es: "🦄 Desafortunadamente, el envío de tu correo electrónico no funcionó. Por favor, intenta nuevamente más tarde.",
     en: "🦄 Unfortunately the sending of your email did not work. Please try again later",
   },
   failedValidationName: {
-    de: "Bitte gebe deinen Namen ein",
+    es: "Por favor, completa tu nombre.",
     en: "Please fill in your name",
   },
 } as const;
 
 export const buttonLabels = {
   language: {
-    de: "DE",
+    es: "ES",
     en: "EN",
   },
 } as const;

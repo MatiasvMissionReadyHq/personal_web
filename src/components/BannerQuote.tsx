@@ -19,7 +19,7 @@ const BannerQuote: React.FC<BannerProps> = ({
   const { language } = useLanguage();
 
   const quoteTranslation =
-    language === "DE" ? quotesData[quoteIndex].de : quotesData[quoteIndex].en;
+    language === "ES" ? quotesData[quoteIndex].es : quotesData[quoteIndex].en;
 
   useQuoteAnimation(`.${containerType}-container h2`);
 

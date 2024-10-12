@@ -7,9 +7,9 @@ const Imprint = () => {
 
   return (
     <React.Fragment>
-      {language === "DE" ? (
+      {language === "ES" ? (
         <article className="flex flex-col gap-6 max-w-[70vw]">
-          <h1>Impressum</h1>
+          <h1>aviso legal</h1>
         </article>
       ) : (
         <article className="flex flex-col gap-6 max-w-[70vw]">
