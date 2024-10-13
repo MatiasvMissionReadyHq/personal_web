@@ -11,7 +11,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact: React.FC = () => {
-  const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "";
+  const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "http://localhost:4000/api/send";
 
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
@@ -39,9 +39,16 @@ const Contact: React.FC = () => {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
 
+    //console.log(data)
+
     try {
-      const response = await axios.post(apiBaseUrl, data);
-      console.log(response);
+      const response = await axios.post(apiBaseUrl, {
+        name: data.getAll("name")[0],
+        email: data.getAll("email")[0],
+        subject: data.getAll("subject")[0],
+        message: data.getAll("message")[0]
+      });
+      //console.log(response);
       if (language === "ES") {
         toast.success(toastMessages.successEmailSent.es);
       } else {
