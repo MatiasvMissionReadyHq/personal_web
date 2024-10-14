@@ -14,7 +14,7 @@ const HeaderIntro: React.FC = () => {
 
   return (
     <section
-      className="hero flex flex-col justify-center gap-10 items-center h-full max-lg:h-full max-lg:gap-6"
+      className="hero flex flex-col justify-center gap-10 items-center h-full max-lg:h-full max-lg:gap-6  mb-[3020px]"
       ref={ref}
       id="home"
     >
@@ -44,7 +44,7 @@ const HeaderIntro: React.FC = () => {
             key={index}
             label={language === "ES" ? button.label.es : button.label.en}
             iconSVG={button.icon}
-            link={`#${button.link.toLocaleLowerCase()}`}
+            link={`${button.link.toLocaleLowerCase()}`}
             buttoncolor={button.color}
             onClick={() => {
               setActiveSection(button.name);

@@ -36,6 +36,9 @@ const Home: React.FC = () => {
             <LazySiteBarRight />
           </Suspense>
         </header>
+        <div
+        style = {{marginTop:250}}
+      ></div>
         <main className="relative">
           <Suspense fallback={<div>Loading...</div>}>
             <LazyBannerQuote

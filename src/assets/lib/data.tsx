@@ -61,7 +61,7 @@ export const headerIntroData = {
     },
     {
       name: "Projects",
-      link: "https://www.linkedin.com/in/matias-pereyra-0918b478/",
+      link: "https://github.com/MatiasvMissionReadyHq",
       label: {
         es: "Mis Proyectos",
         en: "My Projects",
