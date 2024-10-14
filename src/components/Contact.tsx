@@ -48,7 +48,7 @@ const Contact: React.FC = () => {
         subject: data.getAll("subject")[0],
         message: data.getAll("message")[0]
       });
-      //console.log(response);
+      console.log(response);
       if (language === "ES") {
         toast.success(toastMessages.successEmailSent.es);
       } else {
