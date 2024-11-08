@@ -12,7 +12,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Contact: React.FC = () => {
   const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "https://app.netlify.com/sites/portafolioweb2024/.netlify/functions/api/api";
-
+console.log(apiBaseUrl)
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [subject, setSubject] = useState<string>("");
